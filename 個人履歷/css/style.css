@@ -1,0 +1,478 @@
+/* 共同設定 */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* 第一區 */
+.container {
+    background-color: rgba(246, 243, 243, 0.58);
+    box-sizing: border-box;
+    height: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container .header {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1 1 50px;
+    justify-content: space-between;
+    margin: 0 auto 50px auto;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container .header .name {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.container .header .name span {
+    color: brown;
+    font-weight: bold;  
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+.container .header .navbar {
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+.container .header .navbar a {
+    padding: 0 10px;
+}
+
+.container .header .navbar a:hover {
+    color: rgb(171, 76, 76);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 10px;
+    background-color: white;
+}
+
+.container .welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container .welcome .word {
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 0;
+    line-height: 2em;
+}
+
+.container .welcome .word h2 {
+    font-size: 1em;
+}
+
+.container .welcome img {
+    width: 30%;
+    height: auto;
+}
+
+
+@media (max-width:1000px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .container .header {
+        max-width: 800px;
+        display: block;
+    }
+
+    .container .header .navbar {
+        display: none;
+    }
+
+    .container .header .navbar a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:800px) {
+    .container .welcome {
+        max-width: 600px;
+        display: block;
+    }
+
+    .container .welcome .word {
+        margin: 0 auto;
+    }
+    .container .welcome img {
+        margin: 0 auto;
+        display: block;
+        width: 30%;
+    }
+
+}
+
+/* 第二區 */
+
+.intro {
+    margin: 50px auto;
+    max-width: 1000px;
+    height: 100px;
+}
+
+.intro .box {
+    background-color: yellow;
+    max-width: 800px; 
+    height: auto;
+    position: relative;
+}
+
+.intro .box h2 {
+    position: relative;
+    left: 100px;
+    top: -25px;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight:10;
+    display: inline;
+}
+
+.intro .box span {
+    position: relative;
+    left: 100px;
+    top: -25px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.intro-1  {
+    margin-top: 80px;
+    padding: 0 300px 0 210px;
+    max-width: 1000px;
+}
+
+.intro-1 .box {
+    margin: 0px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.intro-1 .box p {
+    padding-bottom: 50px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.intro-1 .box h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    display: inline;
+    line-height: 60px;
+}
+
+.intro-1 .box span {
+    line-height: 60px;
+    background-color: #000;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-1 .box a {
+    border: 0.5px solid black;
+    width: 170px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+.intro-1 .box a:hover {
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media (max-width:800px) {
+    .intro {
+        max-width: 600px;
+        margin-top: 150px;
+    }
+    .intro-1 {
+        max-width: 600px;
+    }
+
+    .intro-1 .box {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* 第三區 */
+
+.history {
+    position: relative;
+}
+
+.history img {
+    width: 500px;
+    height: auto;
+    padding: 0 0 0 700px;
+}
+
+.history .box {
+    background-color: rgba(246, 243, 243, 1);
+    width: 700px;
+    height: 800px;
+    margin: -150px 0px 0 0px;
+    position: relative;
+    left: 200px;
+}
+
+.history .box .intro .box-1 h2 {
+    font-size: 50px;
+    font-weight: lighter;
+    width: 500px;
+    padding: 80px 50px;
+}
+
+.history .box .intro .box-1 span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.history .box .intro table {
+    margin: 0 30px;
+    line-height: 30px;
+    width: 500px;
+    text-align-last: left;
+    border-collapse: collapse;
+    position: relative;
+}
+
+.history .box .intro th,td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.history .box .intro tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.history .box .intro .ylsh {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    /* left: 100%; */
+    display: none;
+}
+
+.history .box .intro table .effect:hover .ylsh{
+    display: block;
+    left: -30%;
+    z-index: 10;
+}
+
+.history .box .intro table .effect:hover {
+    background-color: rgb(190, 255, 133);
+}
+
+
+.history .box .intro .pad {
+    margin-bottom: 40px;
+}
+
+.history .box .intro a {
+    border: 0.5px solid black;
+    width: 170px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.history .box .intro a:hover {
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;    
+}
+
+.history .decoration {
+    width: 80px;
+    height: 750px;
+    background-color: yellow;
+    position: absolute;
+    right: 23%;
+    top: 375px;
+}
+
+/* 第四區 */
+
+.ins {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.ins .box {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 60px auto 0 auto;
+}
+
+.ins .title h2 {
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+}
+
+.ins .box .post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    padding-right: 15px;
+    -webkit-filter: saturate(0.7); /* Safari */
+    filter: saturate(0.7);
+}
+
+.ins .box .post:hover img {
+    opacity: 1;
+    transition: 0.3s;
+    -webkit-filter: saturate(1); /* Safari */
+    filter: saturate(1);
+}
+
+.ins .box .post {
+    position: relative;
+    flex: 1 1 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 15px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px grey;
+}
+
+.ins .box .post .describe {
+    position: absolute;
+    z-index: 0;
+    top: 335px;
+    display: none;
+    width: 315px;
+    height: 425px;
+    color: #000;
+}
+
+.ins .box .post .describe h4, hr, .icon {
+    position: relative;
+    padding: 0 15px;
+    color: rgb(2, 2, 2);
+    font-weight: 800;
+}
+
+.ins .box .post .describe .date {
+    padding: 0 15px;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    position: relative;
+    top: -320px;
+}
+
+.ins .box .post .describe hr {
+    width: 260px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    border: none;
+    margin: 10px 0;
+    position: relative;
+    left: 15px;
+}
+
+.ins .box .post:hover .describe {
+    display: block;
+    background-color: rgb(255, 251, 251);
+}
+
+.ins .box .post .describe i {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.ins .box .post .describe .icon-heart {
+    margin-left: 120px;
+}
+
+/* 第五區 */
+
+.message {
+    background-color: #000;
+    padding: 30px 200px;
+    color: white;
+    text-align: center;
+}
+
+.message h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.message .text, .submit {
+    width: 600px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.message .logo {
+    margin-top: 50px;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+
+.message .submit {
+    background-color: yellow;
+}
+
+.message .submit:hover {
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.message .text:focus{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.message a {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}

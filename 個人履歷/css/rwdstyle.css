@@ -1,0 +1,804 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(146, 89, 54);
+}
+
+
+/* 第一區 */
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container .header {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.container .header .name {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #ccc;
+    transform: skewX(10deg);
+    box-shadow: 0px 5px 5px grey;
+}
+
+.container .header .name img {
+    width: 10%;
+    transition: all 0.5s linear;
+}
+
+.container .header .name img:hover {
+    border: 0.5px solid black;
+    background-color: white;
+}
+
+.container .header .name span {
+    color: black;
+}
+
+.container .header .navbar {
+    display: none;
+}
+
+.container .header .navbar a {
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.container .welcome .word {
+    margin: 30px 0px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.container .welcome img {
+    width: 100%;
+}
+
+.container .welcome #changebar {
+    max-width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container .welcome #changebar a {
+    padding-right: 30px;
+}
+
+.container .welcome #introbar {
+    max-width: 375px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+@media (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+    .container .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container .header .navbar {
+        display: block;
+        position: fixed;
+        right: 0px;
+        padding: 10px;
+        background-color: rgba(247, 226, 186, 0.888);
+        z-index: 100;
+    }
+    .container .welcome {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .container .welcome img {
+        width: 40%;
+        margin-left: 10px;
+    }
+    .container .welcome .word {
+        font-size: 1rem;
+        width: 50%;
+    }
+    .container .header .navbar a:hover {
+        color: rgb(171, 76, 76);
+        font-weight: bold;
+        padding: 15px 10px;
+        background-color: white;
+        font-size: 20px;
+    }
+    .container .header .name {
+        font-size: 1.5rem;
+    }
+    .container .header .name:hover {
+        transform: scale(1.3);
+        transition: 0.3s linear;
+    }
+    .container .header .name img {
+        display: none;
+    }
+
+    .container .header .navbar {
+        flex-direction: row;
+    }
+
+    .container .welcome #changebar {
+        height: 400px;
+        margin: 30px;
+        transform: translateY(5%);
+        width: 30%;
+    }
+
+    .container .welcome #changebar div {
+        margin-bottom: 50px;
+    }
+
+    .container .welcome #changebar a {
+        padding: 20px 0px;
+    }
+
+    .container .welcome .cover {
+        width: 30%;
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .container .header .navbar {
+        display: block;
+        position: fixed;
+        right: 250px;
+        padding: 20px;
+        background-color: rgba(247, 226, 186, 0.888);
+        z-index: 100;
+    }
+    .container .welcome .word {
+        line-height: 35px;
+        padding: 30px 0;
+    }
+    .container .welcome #changebar {
+        transform: translateY(15%);
+    }
+
+}
+
+/* 第二區 */
+
+.intro {
+    max-width: 375px;
+    margin: 50px auto 0px auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.intro-1 {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.intro .box {
+    background-color: yellow;
+    /* max-width: 375px;  */
+    height: auto;
+    position: relative;
+}
+
+.intro .box h2 {
+    position: relative;
+    top: -25px;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight:10;
+    display: inline;
+}
+
+.intro .box span {
+    position: relative;
+    top: -25px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.intro-1 .box {
+    margin: 0 auto;
+}
+
+.intro-1 .box p {
+    padding-bottom: 50px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.intro-1 .box h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    display: inline;
+    line-height: 60px;
+}
+
+.intro-1 .box span {
+    line-height: 60px;
+    background-color: #000;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-1 .box a {
+    border: 0.5px solid black;
+    width: 170px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+.intro-1 .box a:hover {
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media (min-width:768px) {
+    .intro {
+        max-width: 768px;
+    }
+
+    .intro-1 {
+        max-width: 768px;
+    }
+
+    .intro-1 .box p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .intro {
+        max-width: 1024px;
+    }
+
+    .intro-1 {
+        max-width: 1024px;
+    }
+
+    .intro-1 .box p {
+        font-size: 1.4rem;
+    }
+}
+
+/* 第三區 */
+
+.history {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.history img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.history .slide .button {
+    text-align: center;
+    cursor: pointer;
+    border: 0.5px black solid;
+    width: 200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.history .slide .button span {
+    padding: 20px;
+}
+
+.history .box {
+    background-color: rgba(246, 243, 243, 1);
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+.history .box .intro .box-1 h2 {
+    font-size: 50px;
+    font-weight: lighter;
+    padding: 80px 50px;
+}
+
+.history .box .intro .box-1 span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.history .box .intro table {
+    margin: 0 30px;
+    line-height: 30px;
+    width: 80%;
+    text-align-last: left;
+    border-collapse: collapse;
+    position: relative;
+}
+
+.history .box .intro th,td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.history .box .intro tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.history .box .intro a {
+    border: 0.5px solid black;
+    width: 170px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.history .box .intro a:hover {
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;    
+}
+
+@media  (min-width:768px) {
+    .history {
+        max-width: 768px;
+    }
+    
+    .history img {
+        width: 70%;
+        position: relative;
+        left: 14rem;
+        bottom: -5rem;
+        z-index: 5;
+    }
+    
+    .history .slide .button {
+        z-index: 10;
+        background-color: white;
+        position: relative;
+        bottom: -5rem;
+        width: 140px;
+        left: 20%;
+    }
+}
+
+@media (min-width:1024px) {
+    .history {
+        max-width: 1024px;
+    }
+
+    .history .box .intro table {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .history .slide .button {
+        z-index: 10;
+        background-color: white;
+        position: relative;
+        bottom: -5rem;
+        width: 200px;
+        left: 10%;
+    }
+}
+
+/* 第四區 */
+
+.ins {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.ins .title h2 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ins .box .post img {
+    width: 100%;
+}
+
+.ins .box .post {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px grey;
+}
+
+.ins .title h2 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ins .box .post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    padding-right: 15px;
+    -webkit-filter: saturate(0.7); /* Safari */
+    filter: saturate(0.7);
+}
+
+.ins .box .post:hover img {
+    opacity: 1;
+    transition: 0.3s;
+    -webkit-filter: saturate(1); /* Safari */
+    filter: saturate(1);
+}
+
+.ins .box .post .describe {
+    position: absolute;
+    z-index: 0;
+    top: 290px;
+    display: none;
+    width: 315px;
+    height: 425px;
+    color: #000;
+}
+
+.ins .box .post .describe h4, hr, .icon {
+    position: relative;
+    padding: 0 15px;
+    color: rgb(2, 2, 2);
+    font-weight: 800;
+}
+
+.ins .box .post .describe .date {
+    padding: 0 15px;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    position: relative;
+    top: -290px;
+}
+
+.ins .box .post .describe hr {
+    width: 206px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    border: none;
+    margin: 10px 0;
+    position: relative;
+    left: 15px;
+}
+
+.ins .box .post:hover .describe {
+    display: block;
+    background-color: rgb(255, 251, 251);
+}
+
+
+@media (min-width:768px) {
+    .ins {
+        max-width: 768px;
+    }
+
+    .ins .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .ins .box {
+        display: flex;
+    }
+    .ins .box .post {
+        flex:1 1 33%;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+    .ins {
+        max-width: 1024px;
+    }
+    .ins .title h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* 第五區 */
+
+#message {
+    max-width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    background-color: #000;
+    color: white;
+}
+
+#message h2, label, .logo {
+    color: white;
+}
+
+.message h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.message .text, .submit {
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.message .logo {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+}
+
+.message .submit {
+    background-color: yellow;
+}
+
+.message .submit:hover {
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.message .text:focus{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.message a {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+
+.message #countdown {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(248, 236, 177, 0.906);
+    color: black;
+    z-index: 100;
+    animation-name: run;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@media (min-width:768px) {
+    #message {
+        max-width: 768px;
+    }
+    #message h2, label, .logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:1024px) {
+    #message {
+        max-width: 1024px;
+    }
+    #message h2, label, .logo {
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes run {
+    0% {
+        bottom: 0;
+        left: 10%;
+    }
+
+    25% {
+        bottom: 0;
+        left: 28%;
+    }
+
+    50% {
+        bottom: 0;
+        left: 48%;
+    }
+
+    75% {
+        bottom: 0;
+        left: 65%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 85%;
+    }
+}
+
+/* 額外的動畫布置練習 */
+
+@keyframes balling {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes scale {
+    25% {
+        transform: scale(1.4);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+}
+
+.ball {
+    position: fixed;
+    width: 100%;
+    border-radius: 50%;
+    animation-name: balling;
+    animation-duration:  3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ball:hover {
+    background-color: black;
+    transition: all 0.5s linear;
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+.ball-1 {
+    position: fixed;
+    width: 100%;
+    border-radius: 50%;
+    animation-name: balling;
+    animation-duration:  5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.msz {
+    width: 10px;
+    height: 10px;
+    transform-origin: 0% 0%;
+}
+
+.lsz {
+    width: 30px;
+    height: 30px;
+    transform-origin: 20% center;
+}
+
+.xlsz {
+    width: 50px;
+    height: 50px;
+    transform-origin: 30% center;
+}
+
+.ball:nth-child(1) {
+    left: 10%;
+    top: 20px;
+}
+
+.ball:nth-child(2) {
+    left: 7%;
+    top: 40px;
+}
+
+.ball:nth-child(3) {
+    left: 10%;
+    top: 80px;
+}
+.ball:nth-child(4) {
+    left: 1%;
+    top: 10px;
+    z-index: -1;
+}
+.ball:nth-child(5) {
+    left: 12%;
+    top: 60px;
+}
+.ball:nth-child(6) {
+    left: 4%;
+    top: 100px;
+}
+
+.ball-1:nth-child(1) {
+    right: 8%;
+    bottom: 120px;
+}
+
+.ball-1:nth-child(2) {
+    right: 7%;
+    bottom: 40px;
+}
+
+.ball-1:nth-child(3) {
+    right: 10%;
+    bottom: 80px;
+}
+.ball-1:nth-child(4) {
+    right: 1%;
+    bottom: 150px;
+    z-index: -1;
+}
+.ball-1:nth-child(5) {
+    right: 12%;
+    bottom: 60px;
+}
+.ball-1:nth-child(6) {
+    right: 4%;
+    bottom: 100px;
+}
